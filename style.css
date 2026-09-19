@@ -1,7 +1,4 @@
-/* =========================================
-   RESET
-========================================= */
-
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -13,18 +10,13 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter", sans-serif;
     background: #ffffff;
     color: #0f172a;
     line-height: 1.6;
     overflow-x: hidden;
 }
-
-
-/* =========================================
-   VARIABLES
-========================================= */
-
+/* Variables */
 :root {
     --background: #ffffff;
     --surface: #f8fafc;
@@ -44,12 +36,7 @@ body {
 
     --transition: 0.3s ease;
 }
-
-
-/* =========================================
-   GLOBAL
-========================================= */
-
+/* Global */
 a {
     color: inherit;
     text-decoration: none;
@@ -92,12 +79,7 @@ button {
 .section-heading p:last-child {
     color: var(--text-secondary);
 }
-
-
-/* =========================================
-   HEADER
-========================================= */
-
+/* header and navbar */
 .header {
     position: fixed;
     top: 0;
@@ -195,12 +177,7 @@ button {
 
     cursor: pointer;
 }
-
-
-/* =========================================
-   HERO
-========================================= */
-
+/* Hero section */
 .hero {
     min-height: 100vh;
 
@@ -277,12 +254,7 @@ button {
 
     gap: 14px;
 }
-
-
-/* =========================================
-   BUTTONS
-========================================= */
-
+/* Buttons */
 .btn {
     display: inline-flex;
 
@@ -333,11 +305,7 @@ button {
     transform: translateY(-2px);
 }
 
-
-/* =========================================
-   CODE CARD
-========================================= */
-
+/* Hero-card */
 .hero-card {
     display: flex;
 
@@ -407,11 +375,7 @@ button {
     color: #0f766e;
 }
 
-
-/* =========================================
-   ABOUT
-========================================= */
-
+/* About */
 .about {
     background: #f8fafc;
 }
@@ -477,12 +441,7 @@ button {
 
     font-size: 0.85rem;
 }
-
-
-/* =========================================
-   SKILLS
-========================================= */
-
+/* Skills */
 .skills {
     background: #ffffff;
 }
@@ -542,12 +501,7 @@ button {
 
     font-size: 0.8rem;
 }
-
-
-/* =========================================
-   PROJECTS
-========================================= */
-
+/* Projects */
 .projects {
     background: #f8fafc;
 }
@@ -703,12 +657,7 @@ button {
 
     font-weight: 700;
 }
-
-
-/* =========================================
-   EXPERIENCE
-========================================= */
-
+/* Experience */
 .experience {
     background: #ffffff;
 }
@@ -792,12 +741,7 @@ button {
 
     font-size: 0.9rem;
 }
-
-
-/* =========================================
-   CONTACT
-========================================= */
-
+/* Contact-section */
 .contact {
     background: #f8fafc;
 }
@@ -874,12 +818,7 @@ button {
 
     box-shadow: 0 6px 15px rgba(37, 99, 235, 0.08);
 }
-
-
-/* =========================================
-   FOOTER
-========================================= */
-
+/* Footer-section */
 .footer {
     padding: 25px 0;
 
@@ -896,15 +835,12 @@ button {
     font-size: 0.75rem;
 }
 
-
-/* =========================================
-   SCROLL REVEAL
-========================================= */
+/* Scroll-Reveal */
 
 .reveal {
     opacity: 0;
 
-    transform: translateY(35px);
+    transform: translateY(30px);
 
     transition:
         opacity 0.7s ease,
@@ -916,12 +852,7 @@ button {
 
     transform: translateY(0);
 }
-
-
-/* =========================================
-   RESPONSIVE
-========================================= */
-
+/* Responsive-tablet */
 @media (max-width: 900px) {
 
     .hero-content {
@@ -943,10 +874,9 @@ button {
     .projects-grid {
         grid-template-columns: 1fr;
     }
-
 }
 
-
+/* Responsivenss-Mobile */
 @media (max-width: 700px) {
 
     .section {
@@ -976,6 +906,8 @@ button {
         background: #ffffff;
 
         box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
+
+        z-index: 1000;
     }
 
     .navbar.open {
@@ -1017,10 +949,8 @@ button {
     .contact-box {
         padding: 45px 20px;
     }
-
 }
-
-
+/* Responsive-Small screen */
 @media (max-width: 450px) {
 
     .hero-buttons {
@@ -1036,5 +966,4 @@ button {
 
         font-size: 0.75rem;
     }
-
 }
