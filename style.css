@@ -90,9 +90,7 @@ button {
 }
 
 
-/* =========================================
-   HEADER
-========================================= */
+/*  header-section */
 
 .header {
     position: fixed;
@@ -211,11 +209,8 @@ button {
 
 .hero-content {
     display: grid;
-
     grid-template-columns: 1.2fr 0.8fr;
-
     gap: 70px;
-
     align-items: center;
 }
 
@@ -848,13 +843,10 @@ button {
     font-size: 0.75rem;
 }
 /* Scroll reveal */
-.reveal {
-    opacity: 1;
-    transform: translateY(0);
-
-    transition:
-        opacity 0.7s ease,
-        transform 0.7s ease;
+..reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .reveal.show {
@@ -870,9 +862,11 @@ button {
         gap: 50px;
     }
 
-    .hero-card {
-        justify-content: flex-start;
-    }
+   .hero-card {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
     .about-grid {
         grid-template-columns: 1fr;
