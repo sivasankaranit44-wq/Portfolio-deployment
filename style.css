@@ -916,6 +916,7 @@ button {
         background: #ffffff;
 
         box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
+        z-index: 1000;
     }
 
     .navbar.open {
